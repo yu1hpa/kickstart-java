@@ -31,9 +31,11 @@ class Main {
 	}
 	
 	static int printQueue(Queue queue) {
+		System.out.print("|");
 		for (int i = 0; i < queue.data.length; i++) {
-			System.out.println(queue.data[i]);
+			System.out.print(queue.data[i]+"|");
 		}
+		System.out.println("");
 		return 0;
 	}
 	
@@ -42,5 +44,9 @@ class Main {
 		enqueue(queue,10); printQueue(queue);
 		enqueue(queue,20); printQueue(queue);
 		enqueue(queue,30); printQueue(queue);
+		System.out.println(dequeue(queue));printQueue(queue);
+		System.out.println(dequeue(queue));printQueue(queue);
+		System.out.println(dequeue(queue));printQueue(queue);
+		System.out.println(dequeue(queue));printQueue(queue);
 	}
 }
